@@ -1,6 +1,7 @@
 # easyandquick
 
-A new Flutter project.
+기초 프로젝트 랩 11조
+대학생들을 위한 학습 플랫폼.
 
 ## Getting Started
 
