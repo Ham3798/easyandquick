@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       //home: Image.asset('logo.png')
       //home: Container( width: 50, height: 50, color: Colors.blue ) //50LP == 1.2cm
 
-      // home: Center(
+      //home: Center(
       //     child: Container( width: 50, height: 50, color: Colors.blue ),
       // )
 
@@ -38,8 +38,7 @@ class MyApp extends StatelessWidget {
         bottomNavigationBar: BottomAppBar(
           child: Row(
             children: [
-
-              Icon(Icons.phone),
+              Icon(Icons.star),
               Icon(Icons.message),
               Icon(Icons.contact_page),
             ],
@@ -51,11 +50,3 @@ class MyApp extends StatelessWidget {
 }
 
 
-class QWER extends StatelessWidget {
-  const QWER({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
