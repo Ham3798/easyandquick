@@ -15,9 +15,8 @@ class random_world extends StatelessWidget {
         appBar: AppBar(
           title: Text('Welcome to Flutter'),
         ),
-        body: const Center(                     // Add the const
-          //child: Text(wordPair.asPascalCase), // REPLACE with...
-          child: RandomWords(),                 // ...this line
+        body: const Center(
+          child: RandomWords(),
         ),
       ),
     );
@@ -52,11 +51,20 @@ class _RandomWordsState extends State<RandomWords> {
             _suggestions[index].asPascalCase,
             style: _biggerFont,
           ),
-          trailing: Icon(    // 하트 표시
-            alreadySaved ? Icons.favorite : Icons.favorite_border,
+          trailing: Icon(
+            alreadySaved ? Icons.favorite : Icons.favorite_border, // 하트
             color: alreadySaved ? Colors.red : null,
             semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
           ),
+          onTap: () {
+            setState(() { // setState() : 상태가 변경되었음을 프레임워크에 알림
+              if (alreadySaved) {
+                _saved.remove(_suggestions[index]);
+              } else {
+                _saved.add(_suggestions[index]);
+              }
+            });                // to here.
+          },
         );
       },
     );
