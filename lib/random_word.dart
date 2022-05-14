@@ -4,17 +4,23 @@ import 'package:flutter/material.dart';
 // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/#6
 // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/#4
 
-class random_word extends StatelessWidget {
+  class random_word extends StatelessWidget {
   const random_word({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Startup Name Generator',
-      home: RandomWords(),
-    );
+      return MaterialApp(
+        title: 'Startup Name Generator',
+        theme: ThemeData(
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: Colors.black,
+          ),
+        ),
+        home: const RandomWords(),
+      );
+    }
   }
-}
 
 class _RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[]; // 단어 저장
