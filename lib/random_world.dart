@@ -2,6 +2,8 @@ import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
 // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/#6
+// https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/#4
+
 class random_world extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -30,8 +32,9 @@ class RandomWords extends StatefulWidget {
 }
 
 class _RandomWordsState extends State<RandomWords> {
-  final _suggestions = <WordPair>[];                 // NEW
-  final _biggerFont = const TextStyle(fontSize: 18); // NEW
+  final _suggestions = <WordPair>[];                 // 단어 저장
+  final _saved = <WordPair>{};                       // 좋아요
+  final _biggerFont = const TextStyle(fontSize: 18); // 스타일
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
@@ -43,10 +46,16 @@ class _RandomWordsState extends State<RandomWords> {
         if (index >= _suggestions.length) {
           _suggestions.addAll(generateWordPairs().take(10));
         }
+        final alreadySaved = _saved.contains(_suggestions[index]); // 좋아요 존재하는가?
         return ListTile(
           title: Text(
             _suggestions[index].asPascalCase,
             style: _biggerFont,
+          ),
+          trailing: Icon(    // 하트 표시
+            alreadySaved ? Icons.favorite : Icons.favorite_border,
+            color: alreadySaved ? Colors.red : null,
+            semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
           ),
         );
       },
