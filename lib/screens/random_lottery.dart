@@ -24,7 +24,7 @@ import 'package:flutter/material.dart';
 
 class _RandomWordsState extends State<RandomWords> {
   final _suggestions = <WordPair>[]; // 단어 저장
-  final _saved = <WordPair>{}; // 좋아요
+  final _saved = <WordPair>{}; // 북마크
   final _biggerFont = const TextStyle(fontSize: 18); // 스타일
 
   @override
@@ -50,15 +50,15 @@ class _RandomWordsState extends State<RandomWords> {
             _suggestions.addAll(generateWordPairs().take(10));
           }
 
-          final alreadySaved = _saved.contains(_suggestions[index]); // 좋아요는 존재 하는가?
+          final alreadySaved = _saved.contains(_suggestions[index]); // 북마크는 존재 하는가?
 
           return ListTile(
-            title: Text( // 저장된 단어 불러오기
-              _suggestions[index].asPascalCase,
+            title: Text( // 저장된 문제 불러오기
+              ('$index 번 문제' + _suggestions[index].asPascalCase),
               style: _biggerFont,
             ),
             trailing: Icon( // 좋아요
-              alreadySaved ? Icons.favorite : Icons.favorite_border,
+              alreadySaved ? Icons.bookmark : Icons.bookmark_border,
               color: alreadySaved ? Colors.red : null,
               semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
             ),
