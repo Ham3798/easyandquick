@@ -2,6 +2,7 @@ import 'package:easyandquick/screens/random_lottery.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'random_lottery.dart';
+import 'package:http/http.dart';
 
 class login extends StatelessWidget {
   const login({Key? key}) : super(key: key);
@@ -25,6 +26,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  String
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
