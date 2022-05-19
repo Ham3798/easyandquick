@@ -1,7 +1,6 @@
 import 'dart:convert';
-
-import 'package:english_words/english_words.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'problem.dart';
 import 'package:http/http.dart' as http;
@@ -16,6 +15,7 @@ class random_problem extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
@@ -72,12 +72,13 @@ class _RandomProblemsState extends State<RandomProblems> {
             itemCount: _idList.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                // onTap: () {
-                //   Navigator.push(
-                //       context,
-                //       CupertinoPageRoute(builder: (context) => problem())
-                //   );
-                // },
+                onTap: () async {
+                  final item_id = _idList[index];
+                  final result = await Navigator.push(
+                      context,
+                      CupertinoPageRoute(builder: (context)=>problem_Page(id:item_id)),
+                  );
+                },
                 title: Container(
                   alignment: Alignment.centerLeft,
                   height: 50,
