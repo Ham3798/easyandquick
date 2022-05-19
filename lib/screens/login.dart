@@ -38,6 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Image.asset('logo.png'),
               Text(greetings),
               Text('ID : ham3798'),
               Text('PW : *******', style: Theme

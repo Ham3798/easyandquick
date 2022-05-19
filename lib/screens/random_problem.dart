@@ -72,12 +72,12 @@ class _RandomProblemsState extends State<RandomProblems> {
             itemCount: _idList.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      CupertinoPageRoute(builder: (context) => problem())
-                  );
-                },
+                // onTap: () {
+                //   Navigator.push(
+                //       context,
+                //       CupertinoPageRoute(builder: (context) => problem())
+                //   );
+                // },
                 title: Container(
                   alignment: Alignment.centerLeft,
                   height: 50,
