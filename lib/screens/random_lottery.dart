@@ -62,7 +62,9 @@ class _RandomWordsState extends State<RandomWords> {
               color: alreadySaved ? Colors.red : null,
               semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
             ),
-            onTap: () {
+            onTap: (
+
+                ) {
               setState(() { // 상태가 변경되었음을 프레임워크에 알림
                 if (alreadySaved) {
                   _saved.remove(_suggestions[index]);
