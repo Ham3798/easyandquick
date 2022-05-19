@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/#6
 // https://codelabs.developers.google.com/codelabs/first-flutter-app-pt2/#4
-//asdasdsdfsdfsdfsdgdrgerdg
+
   class random_word extends StatelessWidget {
   const random_word({Key? key}) : super(key: key);
 
