@@ -39,20 +39,14 @@ class _problemState extends State<problem> {
     // 서버 통신.
     // TODO: implement initState
     super.initState();
-    _asyncMethod();
+
+    _post();
+    _get();
+
   }
 
-  _asyncMethod() async {
-    // http.Response response = await http.post(
-    //   Uri.parse('http://127.0.0.1:5000/problem'),
-    //   headers: <String, String> {
-    //     'Content-Type': 'http://127.0.0.1:5000/problem',
-    //   },
-    //   body: <String, String> {
-    //     'id': widget.id,
-    //   },
-    // );
-    final response = await http.get(Uri.parse('http://127.0.0.1:5000/problem'));
+  _get() async {
+    final response = await http.get(Uri.parse('http://127.0.0.1:5000/problem/get'));
     final decoded = json.decode(response.body) as Map<String, dynamic>;
     setState(() {
       _name = decoded['name'];
@@ -61,6 +55,20 @@ class _problemState extends State<problem> {
       _str = decoded['str'];
     });
   }
+
+  _post() async {
+    String url = 'http://127.0.0.1:5000/problem/post';
+
+    http.Response response = await http.post(
+      Uri.parse(url),
+      headers: <String, String> {
+        'String': 'application/x-www-form-urlencoded',
+      },
+      body: <String, String> {
+        'id': widget.id,
+      },
+    );
+}
 
   @override
   Widget build(BuildContext context) {

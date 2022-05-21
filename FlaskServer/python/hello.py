@@ -27,23 +27,27 @@ def problemsSTR(): # flutter random_problems 페이지에서 다음 예시와 �
     response.headers.add("Access-Control-Allow-Origin", "*") 
     return response
 
-@app.route('/problem', methods = ['POST', 'GET']) # flutter problem 페이지
-def problem(): 
+@app.route('/problem/get', methods = ['GET']) # flutter problem 페이지
+def problemGET(): 
     # flutter random_problems 페이지에서 특정 문제를 누르면(on top 메소드) flutter에서 여기로 해당 문제의 문제 ID를 주면, Flask에서 데이터베이스에 문제 ID를 검색해서 해당 문제의 데이터를 Map_json 형태로 보내줌.
-    id = -1
-    if request.method == 'POST':
-        id = request.form['id']
-    
-
     str = {
-  "id":"487349",
-  "name":"Pooja Bhaumik",
-  "bookmark" : 32,
-  "like" : 2
+  "id": "12312",
+  "str":"2.3 주사위 1개를 두 번 던지는 시행에 대하여 다음을 구하라.",
+  "name":"함민범",
+  "bookmark" : "32",
+  "like" : "2"
 }
     response = jsonify(str)
     response.headers.add("Access-Control-Allow-Origin", "*") 
     return response
+
+
+@app.route('/problem/post', methods = ['POST']) # flutter problem 페이지
+def problemPOST(): 
+    print(request.is_json)
+    params = request.get_json()
+    print(params['id'])
+    return 'ok'
 
 if __name__=="__main__":
     app.run(debug = True)
