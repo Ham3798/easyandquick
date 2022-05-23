@@ -1,10 +1,8 @@
 import 'dart:convert';
 
-import 'package:easyandquick/screens/random_lottery.dart';
 import 'package:easyandquick/screens/random_problem.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'random_lottery.dart';
 import 'package:http/http.dart' as http;
 
 class login extends StatelessWidget {
