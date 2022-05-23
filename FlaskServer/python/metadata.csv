@@ -1,0 +1,26 @@
+genres,id,title,wrong_answer_rate,vote_like
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 4, 'name': 'de morgans law'}]",1,one,0.35,50
+"[{'id': 6, 'name': 'conditional probability'}, {'id': 3, 'name': 'a case of treachery'}]",2,two,6.9,32
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 6, 'name': 'additive theroem'}]",3,three,6.5,45
+"[{'id': 1, 'name': 'union event'}]",4,four,6.1,24
+"[{'id': 1, 'name': 'union event'}]",5,five,5.7,34
+"[{'id': 1, 'name': 'union event'}]",6,six,7.7,65
+"[{'id': 3, 'name': 'a case of treachery'}, {'id': 5, 'name': 'additive theroem'}]",7,seven,6.2,34
+"[{'id': 1, 'name': 'union event'}]",8,eight,5.4,54
+"[{'id': 6, 'name': 'conditional probability'}]",9,nine,5.5,43
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 6, 'name': 'conditional probability'}]",10,ten,6.6,54
+"[{'id': 5, 'name': 'additive theroem'}, {'id': 6, 'name': 'conditional probability'}]",11,eleven,6.5,25
+"[{'id': 6, 'name': 'conditional probability'}]",12,twelve,5.7,12
+"[{'id': 10, 'name': 'independent'}]",13,thirteen,7.1,32
+"[{'id': 10, 'name': 'independent'}, {'id': 4, 'name': 'de morgans law'}]",14,fourteen,7.1,23
+"[{'id': 5, 'name': 'additive theroem'}, {'id': 10, 'name': 'independent'}]",15,fifteen,5.7,43
+"[{'id': 1, 'name': 'union event'}]",16,sixteen,7.8,23
+"[{'id': 9, 'name': 'sampling without replacedment'}, {'id': 1, 'name': 'union event'}]",17,seventeen,7.2,41
+"[{'id': 12, 'name': 'Bayes organization'}]",18,eightteen,6.5,35
+"[{'id': 9, 'name': 'sampling without replacedment'}]",19,nineteen,6.1,21
+"[{'id': 11, 'name': 'total probability'}]",20,twenty,5.4,48
+"[{'id': 12, 'name': 'Bayes organization'}]",21,twentyone,6.4,34
+"[{'id': 11, 'name': 'total probability'}, {'id': 12, 'name': 'Bayes organization'}]",22,twentytwo,6.5,43
+"[{'id': 9, 'name': 'sampling without replacedment'}]",23,twentythree,6,49
+"[{'id': 9, 'name': 'sampling without replacedment'}, {'id': 2, 'name': 'product event'}]",24,twentyfour,6.3,23
+"[{'id': 11, 'name': 'total probability'}, {'id': 12, 'name': 'Bayes organization'}]",25,twentyfive,7.1,38
