@@ -1,0 +1,49 @@
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 4, 'name': 'de morgans law'}]",1,one,3.5,50,,"2.1 두 사건 A, B에 대하여 P(A)=1/2, P(B)=1/3, P(A*B)1/4=일 때, 다음을 구하라.
+ (a) P(AUB)	 (b) P(A | B)	 (c) P(B | A)	 (d) P(B^c | A^c)",C:\Users\ham3798\Documents\python\data\solution\1.png
+"[{'id': 6, 'name': 'conditional probability'}, {'id': 3, 'name': 'a case of treachery'}]",2,two,6.9,32,,"2.2 임의의 사건 A, B에 대하여 다음이 성립함을 보여라
+
+ (a) P(AB) = P(A) + P(B) - P(AB)
+ (b) A C B이면 P(A) <=  P(B)",C:\Users\ham3798\Documents\python\data\solution\2.png
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 6, 'name': 'additive theroem'}]",3,three,6.5,45,,"2.3 주사위 1개를 두 번 던지는 시행에 대하여 다음을 구하라.
+
+ (a) 주사위 눈의 수의 합이 3 이하일 확률
+ (b) 첫 번째 던진 주사위 눈의 수와 두 번째 던진 주사위 눈의 수가 같을 확률
+ (c) 첫 번째 던진 주사위 눈의 수와 두 번째 던진 주사위 눈의 수의 합이 8이면서 둘 중 한   번은 주사위 눈이 4일 확률 
+ (d) 첫 번째 던진 주사위 눈의 수와 두 번째 던진 주사위 눈의 수의 합이 8일 때, 두 주사위   의 눈의 수가 같을 확률",C:\Users\ham3798\Documents\python\data\solution\3.png
+"[{'id': 1, 'name': 'union event'}]",4,four,6.1,24,,"2.4 동전 1개를 두 번 던질 때, 두 번 모두 앞면이 나오거나 두 번 모두 뒷면이 나올 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\4png
+"[{'id': 1, 'name': 'union event'}]",5,five,5.7,34,,2.5 어떤 동전을 여러 번 던졌더니 앞면이 나올 확률이 뒷면이 나올 확률의 2배였다. 이때 동전의 앞면과 뒷면이 나올 확률을 각각 구하라.,C:\Users\ham3798\Documents\python\data\solution\5.png
+"[{'id': 1, 'name': 'union event'}]",6,six,7.7,65,,"2.6 어떤 실험의 결과는 세 가지 a1,a2,a3만 나타난다고 가정하자. a1이 일어날 가능성은 a2가 일어날 가능성의 3배, a2가 일어날 가능성은 a3가 일어날 가능성의 3배라 가정할 때, a2가 일어날 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\6.png
+"[{'id': 3, 'name': 'a case of treachery'}, {'id': 5, 'name': 'additive theroem'}]",7,seven,6.2,34,,"2.7 두 사건 A, B가 서로 배반사건이고, P(A) = 0.4, P(AB) = 0.6 일 때, P(B)를 구하라.",C:\Users\ham3798\Documents\python\data\solution\7.png
+"[{'id': 1, 'name': 'union event'}]",8,eight,5.4,54,,"2.8 주사위 1개를 100번 던졌을 때, 각각의 눈이 나온 횟수가 다음과 같다.
+
+
+ (a) 짝수 눈이 나온 사건을 A라 할 때, P(A)를 구하라.
+ (b) 3 또는 5의 눈이 나올 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\8.png
+"[{'id': 6, 'name': 'conditional probability'}]",9,nine,5.5,43,,"2.9 A가 B의 부분집합이라 할 때, P(B | A)를 구하라.",C:\Users\ham3798\Documents\python\data\solution\9.png
+"[{'id': 1, 'name': 'union event'}, {'id': 2, 'name': 'product event'}, {'id': 6, 'name': 'conditional probability'}]",10,ten,6.6,54,,"2.10 표본공간  = {a, b, c, d, e, f}에 대하여 사건 A, B, C가 다음과 같다.
+	A = {a, b, c, e}, B = {c, d, e, f}, C = {b, c, f}
+ P({a}) = , P({b}) = , P({c}) = , P({d}) = , P({e}) = , P({f}) = 라 할     때, 다음을 구하여라.
+ 
+ (a) P(A | B)
+ (b) P(A^c | C)",C:\Users\ham3798\Documents\python\data\solution\10.png
+"[{'id': 5, 'name': 'additive theroem'}, {'id': 6, 'name': 'conditional probability'}]",11,eleven,6.5,25,,"2.11  P(A) = 0.4, P(B) = 0.2이고, P(A?B) = 0.6일 때, P(B?A)를 구하라.",C:\Users\ham3798\Documents\python\data\solution\11.png
+"[{'id': 6, 'name': 'conditional probability'}]",12,twelve,5.7,12,,"2.12  사건 A가 일어났을 때 사건 B가 일어날 확률은 P(B?A) = 0.3이고, 사건 B가 일어났을 때 사건 A가 일어날 확률은 P(A?B) = 0.6이다. 사건 B가 일어날 확률 P(B)의 범위를 구하라.",C:\Users\ham3798\Documents\python\data\solution\12.png
+"[{'id': 10, 'name': 'independent'}]",13,thirteen,7.1,32,,"2.13  1부터 10까지 숫자가 적힌 10장의 카드에서 한 장을 꺼낼 때, 나오는 수가 짝수인 사건을 A, 5의 배수인 사건을 B라 하자. 이때 A와 B는 서로 독립인가?
+",C:\Users\ham3798\Documents\python\data\solution\13.png
+"[{'id': 10, 'name': 'independent'}, {'id': 4, 'name': 'de morgans law'}]",14,fourteen,7.1,23,,"2.14  사건 A, B가 독립일 때,  과 이 서로 독립임을 보여라.",C:\Users\ham3798\Documents\python\data\solution\14.png
+"[{'id': 5, 'name': 'additive theroem'}, {'id': 10, 'name': 'independent'}]",15,fifteen,5.7,43,,"2.15  P(A) = 1/4, P(A∪B) = 1/3, P(B) = 이고 A와 B가 서로 독립일 때,  값을 구하라.",C:\Users\ham3798\Documents\python\data\solution\15.png
+"[{'id': 1, 'name': 'union event'}]",16,sixteen,7.8,23,,"2.16  경마에 참가한 3마리의 말 A, B, C가 있다. 이때 A가 이길 확률은 B가 이길 확률의 2배이며, B가 이길 확률은 C가 이길 확률의 2배이다. 이때 말 A, B, C가 경마에서 이길 확률을 각각 구하라. (단, 무승부는 없다.)",C:\Users\ham3798\Documents\python\data\solution\16.png
+"[{'id': 9, 'name': 'sampling without replacedment'}, {'id': 1, 'name': 'union event'}]",17,seventeen,7.2,41,,2.17  단지에 붉은 구슬 7개와 흰 구슬 3개가 있다. 구슬 1개를 임의로 꺼내는 시행을 비복원추출로 3번 반복할 때 붉은 구슬 2개와 흰 구슬 1개를 뽑을 확률을 구하라.,C:\Users\ham3798\Documents\python\data\solution\17.png
+"[{'id': 12, 'name': 'Bayes organization'}]",18,eightteen,6.5,35,,"2.18  통계학과의 남녀 학생 구성비가 각각 60%, 40%이다. 이 중에서 남학생의 70%와 여학생의 10%가 각각 외국으로 배낭여행을 다녀온 것으로 알려졌다. 통계학과 학생 중 임의로 선택한 학생 한 명이 외국으로 배낭여행을 다녀 온 학생일 때, 이 학생이 여학생일 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\18.png
+"[{'id': 9, 'name': 'sampling without replacedment'}]",19,nineteen,6.1,21,,"2.19 상자 속에 진공관이 10개 들어 있다. 이 중 4개는 불량품이다. 이 상자 속에서 진공관 3개를 임의로 추출할 때, 다음을 구하라.
+(a) 불량품이 하나도 나오지 않을 확률
+(b) 불량품이 2개 포함될 확률",C:\Users\ham3798\Documents\python\data\solution\19.png
+"[{'id': 11, 'name': 'total probability'}]",20,twenty,5.4,48,,"2.20  두 개의 부품으로 이루어진 제품 생산공정에서 A는 20%, B는 30%의 불량률을 가질 때, 부품을 선별하지 않고 생산한 A와 B의 결합 부품의 불량률을 구하라. ",C:\Users\ham3798\Documents\python\data\solution\20.png
+"[{'id': 12, 'name': 'Bayes organization'}]",21,twentyone,6.4,34,,"2.21
+상자 A에는 불량품 3개와 양품 7개가 있고, 상자 B에는 불량품 1개와 양품 9개가 들어 있다. 임의로 두 상자 중 한 상자를 택한 다음, 그 상자에서 임의로 1개를 꺼냈더니 불량품이었다. 꺼낸 불량품이 상자 A에서 나왔을 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\21.png
+"[{'id': 11, 'name': 'total probability'}, {'id': 12, 'name': 'Bayes organization'}]",22,twentytwo,6.5,43,,"2.22
+같은 방향인 2개의 주 관통 고속도로 I1, I2가 다른 고속도로 I3에 합류한다. 주 관통 고속도로 I1, I2의 용량은 동일하지만, 정체 시간대 I2의 교통량은 정체 시간대 I1의 교통량의 2배이다. 따라서 정체 시간대 I1, I2의 교통 체증에 대한 사건을 각각 E1, E2라고 할 때, P(E1) = 0.10이라고 하면 P(E2) = 0.20이고, P(E1|E2) = 0.40이다. 다음 물음에 답하라.",C:\Users\ham3798\Documents\python\data\solution\22.png
+"[{'id': 9, 'name': 'sampling without replacedment'}]",23,twentythree,6,49,,"2.23
+20개의 퓨즈가 들어 있는 퓨즈 상자가 있다. 이 퓨즈 상자에는 불량 퓨즈 5개가 들어 있다. 만일 이 상자에서 임의로 1개의 퓨즈를 꺼내는 시행을 2번 반복할 때, 꺼낸 퓨즈 2개가 모두 불량일 확률을 구하라. (단 꺼낸 퓨즈는 다시 상자에 넣지 않는다.)",C:\Users\ham3798\Documents\python\data\solution\23.png
+"[{'id': 9, 'name': 'sampling without replacedment'}, {'id': 2, 'name': 'product event'}]",24,twentyfour,6.3,23,,"2.24 빨간 공 3개, 흰 공 5개, 검은 공 2개가 들어 있는 주머니에서 임의로 1개의 공을 꺼내는 시행을 3번 반복할 때. 순서대로 흰 공, 검은 공, 빨간 공이 나올 확률을 구하라. (단 꺼낸 공은 다시 주머니에 넣지 않는다.)",C:\Users\ham3798\Documents\python\data\solution\24.png
+"[{'id': 11, 'name': 'total probability'}, {'id': 12, 'name': 'Bayes organization'}]",25,twentyfive,7.1,38,,"2.25 의학 보고서에 따르면 전체 국민의 7%가 폐 질환을 앓고 있으며, 그들 중 85%가 흡연자라고 한다. 그리고 폐 질환을 앓지 않은 사람 중 25%가 흡연자라고 한다. 임의로 선정한 사람이 흡연자일 확률을 구하고, 임의로 선정한 사람이 흡연자일 때 이 사람이 폐 질환을 앓고 있을 확률을 구하라.",C:\Users\ham3798\Documents\python\data\solution\25.png
