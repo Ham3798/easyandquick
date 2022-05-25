@@ -2,7 +2,7 @@ import json
 from urllib import response
 from flask import Flask, jsonify, request
 import csvPasing
-
+import mysql
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ def problemsID(): # flutter random_problems 페이지에서 다음 예시와 같
 
 @app.route('/problems/str', methods = ['GET']) # flutter random_problems 페이지
 def problemsSTR(): # flutter random_problems 페이지에서 다음 예시와 같은 형태로 추천 알고리즘을 통해 추천받은 문제의 ID들을 순서대로 List 형태로 fluter 서버에 쏴주면 이걸 바탕으로 flutter 페이지에 문제들을 집어 넣음.
-    str = csvPasing.problemsSTR_csv(csvPasing.problemsID_csv())
+    str = mysql.problemsSTR_sql()
     response = jsonify(str)
     response.headers.add("Access-Control-Allow-Origin", "*") 
     return response
@@ -38,7 +38,7 @@ def problemGET():
         response.headers.add("Access-Control-Allow-Origin", "*") 
         return response
     if(request.method == 'GET'):
-        str = csvPasing.read_problem_str(id)
+        str = mysql.problemGET_sql(id)
         print(str)
 
         response = jsonify({'str':str})
@@ -52,4 +52,3 @@ def problemGET():
 
 if __name__=="__main__":
     app.run(debug = True)
-    

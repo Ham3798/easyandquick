@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:js';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -21,7 +20,7 @@ class problem_Page extends StatelessWidget {
 
 class problem extends StatefulWidget {
   final String id;
-  
+
   const problem({Key? key, required this.id}) : super(key: key);
 
   @override

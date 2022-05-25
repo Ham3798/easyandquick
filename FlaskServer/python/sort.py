@@ -12,7 +12,7 @@ def recommend():
     meta = meta.rename(columns={'id':'problemid'})
     meta.head()
 
-    ratings = pd.read_csv('.\\rating.csv')
+    ratings = pd.read_csv('.\\ratings___small.csv')
     ratings = ratings[['userId', 'problemid', 'rating']]
     ratings.head()
 
