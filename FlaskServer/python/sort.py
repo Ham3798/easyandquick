@@ -2,7 +2,13 @@ import numpy as np
 import pandas as pd
 import json
 
+global num
+num = "one"
 
+def num_Set(number):
+    d = { 0 : 'zero', 1 : 'one', 2 : 'two', 3 : 'three', 4 : 'four', 5 : 'five', 6 : 'six', 7 : 'seven', 8 : 'eight', 9 : 'nine', 10 : 'ten', 11 : 'eleven', 12 : 'twelve', 13 : 'thirteen', 14 : 'fourteen', 15 : 'fifteen', 16 : 'sixteen', 17 : 'seventeen', 18 : 'eightteen', 19 : 'nineteen', 20 : 'twenty', 21: 'twentyone', 22: 'twentytwo', 23: 'twentythree', 24:'twentyfour', 25:'twentyfive'}
+    global num
+    num = d[number]
 def recommend():
     meta = pd.read_csv('.\\metadata.csv')
 
@@ -75,8 +81,8 @@ def recommend():
         result.sort(key=lambda r: r[1], reverse=True)
 
         return result[:n]
-
-    recommend_result = recommend('one', matrix, 10, similar_genre=True)
+    print("마지막으로 푼 문제 : " + num)
+    recommend_result = recommend(num, matrix, 10, similar_genre=True)
 
     title_list = list()
     for i in recommend_result:

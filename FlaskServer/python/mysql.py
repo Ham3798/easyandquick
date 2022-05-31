@@ -159,11 +159,22 @@ def problemsSTR_sql():
     
 
 def problemGET_sql(id):
-    str = csvPasing.read_problem_str("3")
-
     sql = "SELECT problem_text FROM problem WHERE problem_id = " + id
 
     cursor.execute(sql)
     str = cursor.fetchone()[0]
 
     return str
+
+def problemTagGET_sql(id):
+    sql = "SELECT problem_genres FROM problem WHERE problem_id = " + id
+    tag = ""
+    cursor.execute(sql)
+    tags = cursor.fetchone()[0].split(" ")
+    # print(tags[0:-1])
+    for i in tags[0:-1]:
+        sql = "SELECT tag_name FROM tag WHERE tag_id = " + i
+        cursor.execute(sql)
+        tag += "#" + cursor.fetchone()[0] + " "
+
+    return tag
