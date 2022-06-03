@@ -1,17 +1,15 @@
 # easyandquick
 
-기초 프로젝트 랩 11조
+충남대학교 2022년도 기초 프로젝트 랩 11조
 대학생들을 위한 학습 플랫폼.
 
-## Getting Started 시작
+충남대학교
+함윤식 ham3798@github.com
+송민주 tisu79@naver.com
+박용범 pyb001028@naver.com
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+----------------------------------------
+프론트엔드 - flutter
+서버 - flask
+데이터베이스 - mysql
+-----------------------------------------
